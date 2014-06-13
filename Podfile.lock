@@ -1,0 +1,27 @@
+PODS:
+  - CocoaLumberjack (1.9.0):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.9.0)
+  - CocoaLumberjack/Extensions (1.9.0):
+    - CocoaLumberjack/Core
+  - libpd (0.0.1)
+  - Masonry (0.5.2)
+  - UIImage+Additions (1.1.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 1.8)
+  - libpd (from `https://raw.github.com/jasperblues/libpd/master/libpd.podspec`)
+  - Masonry (~> 0.4)
+  - UIImage+Additions (~> 1.0)
+
+EXTERNAL SOURCES:
+  libpd:
+    :podspec: https://raw.github.com/jasperblues/libpd/master/libpd.podspec
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
+  libpd: a24777d36d0c0400b3dbe819ec72225b9da6d2b6
+  Masonry: ec0189e1a07af00913e4a1a335ea76887adc86e1
+  UIImage+Additions: 66ee88773215955a2703ea31b790fdf3438303d9
+
+COCOAPODS: 0.33.1

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3CB6BBC7AAD47AC882DA92D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55059BF1B23A41DDA84364AE /* libPods.a */; };
 		F770DAA0194A8CA2002086CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770DA9F194A8CA2002086CE /* Foundation.framework */; };
 		F770DAA2194A8CA2002086CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770DAA1194A8CA2002086CE /* CoreGraphics.framework */; };
 		F770DAA4194A8CA2002086CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770DAA3194A8CA2002086CE /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 		F770DAC4194A8CA4002086CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770DAA3194A8CA2002086CE /* UIKit.framework */; };
 		F770DACC194A8CA4002086CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F770DACA194A8CA4002086CE /* InfoPlist.strings */; };
 		F770DACE194A8CA4002086CE /* DuneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F770DACD194A8CA4002086CE /* DuneTests.m */; };
+		F770DADE194A926B002086CE /* PdController.m in Sources */ = {isa = PBXBuildFile; fileRef = F770DADD194A926B002086CE /* PdController.m */; };
+		F770DAE0194AA2F3002086CE /* patch.pd in Resources */ = {isa = PBXBuildFile; fileRef = F770DADF194AA2F3002086CE /* patch.pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55059BF1B23A41DDA84364AE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E9064304C74EB2A7757BC2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F770DA9C194A8CA2002086CE /* Dune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F770DA9F194A8CA2002086CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F770DAA1194A8CA2002086CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,18 +48,21 @@
 		F770DAA9194A8CA2002086CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F770DAAB194A8CA2002086CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F770DAAD194A8CA2002086CE /* Dune-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dune-Prefix.pch"; sourceTree = "<group>"; };
-		F770DAAE194A8CA2002086CE /* DNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAppDelegate.h; sourceTree = "<group>"; };
-		F770DAAF194A8CA3002086CE /* DNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAppDelegate.m; sourceTree = "<group>"; };
+		F770DAAE194A8CA2002086CE /* DNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNAppDelegate.h; path = Classes/DNAppDelegate.h; sourceTree = "<group>"; };
+		F770DAAF194A8CA3002086CE /* DNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DNAppDelegate.m; path = Classes/DNAppDelegate.m; sourceTree = "<group>"; };
 		F770DAB2194A8CA3002086CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		F770DAB5194A8CA3002086CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		F770DAB7194A8CA3002086CE /* DNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNViewController.h; sourceTree = "<group>"; };
-		F770DAB8194A8CA3002086CE /* DNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNViewController.m; sourceTree = "<group>"; };
-		F770DABA194A8CA3002086CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F770DAB7194A8CA3002086CE /* DNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNViewController.h; path = "Classes/View Controllers/DNViewController.h"; sourceTree = "<group>"; };
+		F770DAB8194A8CA3002086CE /* DNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DNViewController.m; path = "Classes/View Controllers/DNViewController.m"; sourceTree = "<group>"; };
+		F770DABA194A8CA3002086CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
 		F770DAC0194A8CA4002086CE /* DuneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F770DAC1194A8CA4002086CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F770DAC9194A8CA4002086CE /* DuneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DuneTests-Info.plist"; sourceTree = "<group>"; };
 		F770DACB194A8CA4002086CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F770DACD194A8CA4002086CE /* DuneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuneTests.m; sourceTree = "<group>"; };
+		F770DADC194A926B002086CE /* PdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PdController.h; path = Classes/Common/Controllers/PdController.h; sourceTree = "<group>"; };
+		F770DADD194A926B002086CE /* PdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PdController.m; path = Classes/Common/Controllers/PdController.m; sourceTree = "<group>"; };
+		F770DADF194AA2F3002086CE /* patch.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = patch.pd; path = Resources/patch.pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 				F770DAA2194A8CA2002086CE /* CoreGraphics.framework in Frameworks */,
 				F770DAA4194A8CA2002086CE /* UIKit.framework in Frameworks */,
 				F770DAA0194A8CA2002086CE /* Foundation.framework in Frameworks */,
+				C3CB6BBC7AAD47AC882DA92D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +97,7 @@
 				F770DAC7194A8CA4002086CE /* DuneTests */,
 				F770DA9E194A8CA2002086CE /* Frameworks */,
 				F770DA9D194A8CA2002086CE /* Products */,
+				C7E9064304C74EB2A7757BC2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +117,7 @@
 				F770DAA1194A8CA2002086CE /* CoreGraphics.framework */,
 				F770DAA3194A8CA2002086CE /* UIKit.framework */,
 				F770DAC1194A8CA4002086CE /* XCTest.framework */,
+				55059BF1B23A41DDA84364AE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,13 +125,8 @@
 		F770DAA5194A8CA2002086CE /* Dune */ = {
 			isa = PBXGroup;
 			children = (
-				F770DAAE194A8CA2002086CE /* DNAppDelegate.h */,
-				F770DAAF194A8CA3002086CE /* DNAppDelegate.m */,
-				F770DAB1194A8CA3002086CE /* Main_iPhone.storyboard */,
-				F770DAB4194A8CA3002086CE /* Main_iPad.storyboard */,
-				F770DAB7194A8CA3002086CE /* DNViewController.h */,
-				F770DAB8194A8CA3002086CE /* DNViewController.m */,
-				F770DABA194A8CA3002086CE /* Images.xcassets */,
+				F770DADA194A8FB7002086CE /* Classes */,
+				F770DAD9194A8F74002086CE /* Resources */,
 				F770DAA6194A8CA2002086CE /* Supporting Files */,
 			);
 			path = Dune;
@@ -155,6 +161,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F770DAD7194A8F53002086CE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F770DAB7194A8CA3002086CE /* DNViewController.h */,
+				F770DAB8194A8CA3002086CE /* DNViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F770DAD9194A8F74002086CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F770DADF194AA2F3002086CE /* patch.pd */,
+				F770DABA194A8CA3002086CE /* Images.xcassets */,
+				F770DAB4194A8CA3002086CE /* Main_iPad.storyboard */,
+				F770DAB1194A8CA3002086CE /* Main_iPhone.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F770DADA194A8FB7002086CE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F770DADB194A9152002086CE /* Common */,
+				F770DAD7194A8F53002086CE /* View Controllers */,
+				F770DAAE194A8CA2002086CE /* DNAppDelegate.h */,
+				F770DAAF194A8CA3002086CE /* DNAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F770DADB194A9152002086CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F770DADC194A926B002086CE /* PdController.h */,
+				F770DADD194A926B002086CE /* PdController.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F770DAD1194A8CA4002086CE /* Build configuration list for PBXNativeTarget "Dune" */;
 			buildPhases = (
+				06ABDC0783D248269B6C0818 /* Check Pods Manifest.lock */,
 				F770DA98194A8CA2002086CE /* Sources */,
 				F770DA99194A8CA2002086CE /* Frameworks */,
 				F770DA9A194A8CA2002086CE /* Resources */,
+				8E98679E417E4BD6B21DBA70 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +283,7 @@
 				F770DAB6194A8CA3002086CE /* Main_iPad.storyboard in Resources */,
 				F770DABB194A8CA3002086CE /* Images.xcassets in Resources */,
 				F770DAB3194A8CA3002086CE /* Main_iPhone.storyboard in Resources */,
+				F770DAE0194AA2F3002086CE /* patch.pd in Resources */,
 				F770DAAA194A8CA2002086CE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,12 +298,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06ABDC0783D248269B6C0818 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E98679E417E4BD6B21DBA70 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F770DA98194A8CA2002086CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F770DAB0194A8CA3002086CE /* DNAppDelegate.m in Sources */,
+				F770DADE194A926B002086CE /* PdController.m in Sources */,
 				F770DAB9194A8CA3002086CE /* DNViewController.m in Sources */,
 				F770DAAC194A8CA2002086CE /* main.m in Sources */,
 			);
@@ -388,12 +471,14 @@
 		};
 		F770DAD2194A8CA4002086CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E9064304C74EB2A7757BC2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dune/Dune-Prefix.pch";
 				INFOPLIST_FILE = "Dune/Dune-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,12 +486,14 @@
 		};
 		F770DAD3194A8CA4002086CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E9064304C74EB2A7757BC2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dune/Dune-Prefix.pch";
 				INFOPLIST_FILE = "Dune/Dune-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -471,6 +558,7 @@
 				F770DAD3194A8CA4002086CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F770DAD4194A8CA4002086CE /* Build configuration list for PBXNativeTarget "DuneTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +567,7 @@
 				F770DAD6194A8CA4002086CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

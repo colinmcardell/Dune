@@ -8,7 +8,11 @@
 
 #import "DNViewController.h"
 
+#import "PdController.h"
+
 @interface DNViewController ()
+
+@property (strong, nonatomic) PdController *pdController;
 
 @end
 
@@ -17,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self setPdController:[[PdController alloc] init]];
 }
 
 - (void)didReceiveMemoryWarning
