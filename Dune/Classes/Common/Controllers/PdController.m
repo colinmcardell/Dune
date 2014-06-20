@@ -12,7 +12,7 @@
 #import <libpd/PdAudioController.h>
 #import <libpd/PdDispatcher.h>
 
-static NSString * const kPatchFileName = @"patch.pd";
+static NSString * const kPatchFileName = @"_patch.pd";
 
 @interface PdController ()
 

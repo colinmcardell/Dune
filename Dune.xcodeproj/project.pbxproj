@@ -24,7 +24,11 @@
 		F770DACC194A8CA4002086CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F770DACA194A8CA4002086CE /* InfoPlist.strings */; };
 		F770DACE194A8CA4002086CE /* DuneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F770DACD194A8CA4002086CE /* DuneTests.m */; };
 		F770DADE194A926B002086CE /* PdController.m in Sources */ = {isa = PBXBuildFile; fileRef = F770DADD194A926B002086CE /* PdController.m */; };
-		F770DAE0194AA2F3002086CE /* patch.pd in Resources */ = {isa = PBXBuildFile; fileRef = F770DADF194AA2F3002086CE /* patch.pd */; };
+		F7C236561953B4880047496F /* master_.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236511953B4880047496F /* master_.pd */; };
+		F7C236571953B4880047496F /* _patch.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236521953B4880047496F /* _patch.pd */; };
+		F7C236581953B4880047496F /* channel_mono_.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236531953B4880047496F /* channel_mono_.pd */; };
+		F7C236591953B4880047496F /* pair_.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236541953B4880047496F /* pair_.pd */; };
+		F7C2365A1953B4880047496F /* pan_.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236551953B4880047496F /* pan_.pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +66,11 @@
 		F770DACD194A8CA4002086CE /* DuneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuneTests.m; sourceTree = "<group>"; };
 		F770DADC194A926B002086CE /* PdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PdController.h; path = Classes/Common/Controllers/PdController.h; sourceTree = "<group>"; };
 		F770DADD194A926B002086CE /* PdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PdController.m; path = Classes/Common/Controllers/PdController.m; sourceTree = "<group>"; };
-		F770DADF194AA2F3002086CE /* patch.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = patch.pd; path = Resources/patch.pd; sourceTree = "<group>"; };
+		F7C236511953B4880047496F /* master_.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = master_.pd; path = Resources/Patch/master_.pd; sourceTree = "<group>"; };
+		F7C236521953B4880047496F /* _patch.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _patch.pd; path = Resources/Patch/_patch.pd; sourceTree = "<group>"; };
+		F7C236531953B4880047496F /* channel_mono_.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = channel_mono_.pd; path = Resources/Patch/channel_mono_.pd; sourceTree = "<group>"; };
+		F7C236541953B4880047496F /* pair_.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pair_.pd; path = Resources/Patch/pair_.pd; sourceTree = "<group>"; };
+		F7C236551953B4880047496F /* pan_.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pan_.pd; path = Resources/Patch/pan_.pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +181,7 @@
 		F770DAD9194A8F74002086CE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F770DADF194AA2F3002086CE /* patch.pd */,
+				F7C236501953B4790047496F /* Patch */,
 				F770DABA194A8CA3002086CE /* Images.xcassets */,
 				F770DAB4194A8CA3002086CE /* Main_iPad.storyboard */,
 				F770DAB1194A8CA3002086CE /* Main_iPhone.storyboard */,
@@ -199,6 +207,18 @@
 				F770DADD194A926B002086CE /* PdController.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		F7C236501953B4790047496F /* Patch */ = {
+			isa = PBXGroup;
+			children = (
+				F7C236511953B4880047496F /* master_.pd */,
+				F7C236521953B4880047496F /* _patch.pd */,
+				F7C236531953B4880047496F /* channel_mono_.pd */,
+				F7C236541953B4880047496F /* pair_.pd */,
+				F7C236551953B4880047496F /* pan_.pd */,
+			);
+			name = Patch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,10 +300,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C236571953B4880047496F /* _patch.pd in Resources */,
+				F7C236561953B4880047496F /* master_.pd in Resources */,
 				F770DAB6194A8CA3002086CE /* Main_iPad.storyboard in Resources */,
+				F7C2365A1953B4880047496F /* pan_.pd in Resources */,
 				F770DABB194A8CA3002086CE /* Images.xcassets in Resources */,
 				F770DAB3194A8CA3002086CE /* Main_iPhone.storyboard in Resources */,
-				F770DAE0194AA2F3002086CE /* patch.pd in Resources */,
+				F7C236591953B4880047496F /* pair_.pd in Resources */,
+				F7C236581953B4880047496F /* channel_mono_.pd in Resources */,
 				F770DAAA194A8CA2002086CE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
