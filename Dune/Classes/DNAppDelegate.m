@@ -8,13 +8,24 @@
 
 #import "DNAppDelegate.h"
 
+#import "DNAppDependencies.h"
+
 #import <CocoaLumberjack/DDTTYLogger.h>
+
+@interface DNAppDelegate ()
+
+@property (strong, nonatomic) DNAppDependencies *dependencies;
+
+@end
 
 @implementation DNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [DDLog addLogger:[DDTTYLogger sharedInstance] withLogLevel:LOG_LEVEL_VERBOSE];
+    
+    [self setDependencies:[[DNAppDependencies alloc] init]];
+    [self.dependencies installRootViewControllerIntoWindow:[self window]];
     
     return YES;
 }

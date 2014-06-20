@@ -16,7 +16,6 @@
 		F770DAB0194A8CA3002086CE /* DNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F770DAAF194A8CA3002086CE /* DNAppDelegate.m */; };
 		F770DAB3194A8CA3002086CE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F770DAB1194A8CA3002086CE /* Main_iPhone.storyboard */; };
 		F770DAB6194A8CA3002086CE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F770DAB4194A8CA3002086CE /* Main_iPad.storyboard */; };
-		F770DAB9194A8CA3002086CE /* DNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F770DAB8194A8CA3002086CE /* DNViewController.m */; };
 		F770DABB194A8CA3002086CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F770DABA194A8CA3002086CE /* Images.xcassets */; };
 		F770DAC2194A8CA4002086CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770DAC1194A8CA4002086CE /* XCTest.framework */; };
 		F770DAC3194A8CA4002086CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770DA9F194A8CA2002086CE /* Foundation.framework */; };
@@ -29,6 +28,11 @@
 		F7C236581953B4880047496F /* channel_mono_.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236531953B4880047496F /* channel_mono_.pd */; };
 		F7C236591953B4880047496F /* pair_.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236541953B4880047496F /* pair_.pd */; };
 		F7C2365A1953B4880047496F /* pan_.pd in Resources */ = {isa = PBXBuildFile; fileRef = F7C236551953B4880047496F /* pan_.pd */; };
+		F7C2365F1953BF0F0047496F /* DNRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C2365E1953BF0F0047496F /* DNRootWireframe.m */; };
+		F7C236621953BFA30047496F /* DNAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C236611953BFA30047496F /* DNAppDependencies.m */; };
+		F7C2366A1953C41C0047496F /* DNStratumWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C236691953C41C0047496F /* DNStratumWireframe.m */; };
+		F7C2366E1953C59B0047496F /* DNStratumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C2366D1953C59B0047496F /* DNStratumViewController.m */; };
+		F7C236741953CC040047496F /* UIStoryboard+Idiom.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C236731953CC040047496F /* UIStoryboard+Idiom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +60,6 @@
 		F770DAAF194A8CA3002086CE /* DNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DNAppDelegate.m; path = Classes/DNAppDelegate.m; sourceTree = "<group>"; };
 		F770DAB2194A8CA3002086CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		F770DAB5194A8CA3002086CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		F770DAB7194A8CA3002086CE /* DNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNViewController.h; path = "Classes/View Controllers/DNViewController.h"; sourceTree = "<group>"; };
-		F770DAB8194A8CA3002086CE /* DNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DNViewController.m; path = "Classes/View Controllers/DNViewController.m"; sourceTree = "<group>"; };
 		F770DABA194A8CA3002086CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
 		F770DAC0194A8CA4002086CE /* DuneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F770DAC1194A8CA4002086CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -71,6 +73,17 @@
 		F7C236531953B4880047496F /* channel_mono_.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = channel_mono_.pd; path = Resources/Patch/channel_mono_.pd; sourceTree = "<group>"; };
 		F7C236541953B4880047496F /* pair_.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pair_.pd; path = Resources/Patch/pair_.pd; sourceTree = "<group>"; };
 		F7C236551953B4880047496F /* pan_.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pan_.pd; path = Resources/Patch/pan_.pd; sourceTree = "<group>"; };
+		F7C2365D1953BF0F0047496F /* DNRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNRootWireframe.h; path = Classes/Common/View/DNRootWireframe.h; sourceTree = "<group>"; };
+		F7C2365E1953BF0F0047496F /* DNRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNRootWireframe.m; path = Classes/Common/View/DNRootWireframe.m; sourceTree = "<group>"; };
+		F7C236601953BFA30047496F /* DNAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNAppDependencies.h; path = Classes/DNAppDependencies.h; sourceTree = "<group>"; };
+		F7C236611953BFA30047496F /* DNAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNAppDependencies.m; path = Classes/DNAppDependencies.m; sourceTree = "<group>"; };
+		F7C236681953C41C0047496F /* DNStratumWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNStratumWireframe.h; path = "Classes/Modules/Stratum/User Interface/Wireframe/DNStratumWireframe.h"; sourceTree = "<group>"; };
+		F7C236691953C41C0047496F /* DNStratumWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNStratumWireframe.m; path = "Classes/Modules/Stratum/User Interface/Wireframe/DNStratumWireframe.m"; sourceTree = "<group>"; };
+		F7C2366C1953C59B0047496F /* DNStratumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNStratumViewController.h; path = "Classes/Modules/Stratum/User Interface/View/DNStratumViewController.h"; sourceTree = "<group>"; };
+		F7C2366D1953C59B0047496F /* DNStratumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNStratumViewController.m; path = "Classes/Modules/Stratum/User Interface/View/DNStratumViewController.m"; sourceTree = "<group>"; };
+		F7C236701953C7A90047496F /* DNStratumModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNStratumModuleInterface.h; path = "Classes/Modules/Stratum/Module Interface/DNStratumModuleInterface.h"; sourceTree = "<group>"; };
+		F7C236721953CC040047496F /* UIStoryboard+Idiom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+Idiom.h"; path = "Classes/Common/Categories/UIStoryboard+Idiom.h"; sourceTree = "<group>"; };
+		F7C236731953CC040047496F /* UIStoryboard+Idiom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+Idiom.m"; path = "Classes/Common/Categories/UIStoryboard+Idiom.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,15 +182,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F770DAD7194A8F53002086CE /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F770DAB7194A8CA3002086CE /* DNViewController.h */,
-				F770DAB8194A8CA3002086CE /* DNViewController.m */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
 		F770DAD9194A8F74002086CE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,9 +197,11 @@
 			isa = PBXGroup;
 			children = (
 				F770DADB194A9152002086CE /* Common */,
-				F770DAD7194A8F53002086CE /* View Controllers */,
+				F7C236631953C2A70047496F /* Modules */,
 				F770DAAE194A8CA2002086CE /* DNAppDelegate.h */,
 				F770DAAF194A8CA3002086CE /* DNAppDelegate.m */,
+				F7C236601953BFA30047496F /* DNAppDependencies.h */,
+				F7C236611953BFA30047496F /* DNAppDependencies.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -203,8 +209,9 @@
 		F770DADB194A9152002086CE /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F770DADC194A926B002086CE /* PdController.h */,
-				F770DADD194A926B002086CE /* PdController.m */,
+				F7C236711953CBDF0047496F /* Categories */,
+				F7C2365B1953BEB40047496F /* Controller */,
+				F7C2365C1953BEBE0047496F /* View */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -219,6 +226,85 @@
 				F7C236551953B4880047496F /* pan_.pd */,
 			);
 			name = Patch;
+			sourceTree = "<group>";
+		};
+		F7C2365B1953BEB40047496F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F770DADC194A926B002086CE /* PdController.h */,
+				F770DADD194A926B002086CE /* PdController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F7C2365C1953BEBE0047496F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2365D1953BF0F0047496F /* DNRootWireframe.h */,
+				F7C2365E1953BF0F0047496F /* DNRootWireframe.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F7C236631953C2A70047496F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F7C236651953C3A30047496F /* Stratum */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		F7C236651953C3A30047496F /* Stratum */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2366F1953C77F0047496F /* Module Interface */,
+				F7C236661953C3BB0047496F /* User Interface */,
+			);
+			name = Stratum;
+			sourceTree = "<group>";
+		};
+		F7C236661953C3BB0047496F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2366B1953C56F0047496F /* View */,
+				F7C236671953C3C40047496F /* Wireframe */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		F7C236671953C3C40047496F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F7C236681953C41C0047496F /* DNStratumWireframe.h */,
+				F7C236691953C41C0047496F /* DNStratumWireframe.m */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		F7C2366B1953C56F0047496F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2366C1953C59B0047496F /* DNStratumViewController.h */,
+				F7C2366D1953C59B0047496F /* DNStratumViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F7C2366F1953C77F0047496F /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F7C236701953C7A90047496F /* DNStratumModuleInterface.h */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		F7C236711953CBDF0047496F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F7C236721953CC040047496F /* UIStoryboard+Idiom.h */,
+				F7C236731953CC040047496F /* UIStoryboard+Idiom.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,10 +446,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C2366A1953C41C0047496F /* DNStratumWireframe.m in Sources */,
 				F770DAB0194A8CA3002086CE /* DNAppDelegate.m in Sources */,
+				F7C236741953CC040047496F /* UIStoryboard+Idiom.m in Sources */,
 				F770DADE194A926B002086CE /* PdController.m in Sources */,
-				F770DAB9194A8CA3002086CE /* DNViewController.m in Sources */,
+				F7C236621953BFA30047496F /* DNAppDependencies.m in Sources */,
+				F7C2366E1953C59B0047496F /* DNStratumViewController.m in Sources */,
 				F770DAAC194A8CA2002086CE /* main.m in Sources */,
+				F7C2365F1953BF0F0047496F /* DNRootWireframe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
