@@ -1,0 +1,17 @@
+#N canvas 61 186 1231 463 10;
+#X obj 1000 398 outlet~;
+#X obj 1096 398 outlet~;
+#X obj 1000 368 catch~ \$0-left;
+#X obj 1096 368 catch~ \$0-right;
+#X obj 9 203 throw~ \$0-left;
+#X obj 9 230 throw~ \$0-right;
+#X obj 9 80 membrane_;
+#X obj 132 203 throw~ \$0-left;
+#X obj 132 230 throw~ \$0-right;
+#X obj 132 80 membrane_;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 6 0 4 0;
+#X connect 6 1 5 0;
+#X connect 9 0 7 0;
+#X connect 9 1 8 0;
