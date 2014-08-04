@@ -32,7 +32,7 @@
 #X obj 6 229 s \$0-volume.gui.r;
 #X obj 116 184 s \$0-pan.gui.r;
 #X obj 221 171 s \$0-mute.gui.r;
-#X msg 72 45 volume 0 \, pan 0 \, solo 0 \, mute 1;
+#X msg 72 45 volume -18 \, pan 0 \, solo 0 \, mute 1;
 #X connect 0 0 6 0;
 #X connect 1 0 5 0;
 #X connect 2 0 11 0;
@@ -142,9 +142,9 @@
 #X obj 96 30 tgl 16 0 \$0-mute.gui \$0-mute.gui.r M 5 8 0 10 -258699
 -258699 -261689 1 1;
 #X obj 33 56 hsl 77 16 0 117 0 0 \$0-volume.gui \$0-volume.gui.r volume
-7 8 0 10 -262144 -1 -1 5456 1;
-#X obj 33 30 hsl 51 16 -100 100 0 0 \$0-pan.gui \$0-pan.gui.r pan:0
-4 8 0 10 -262144 -1 -1 2500 1;
+7 8 0 10 -262144 -1 -1 3656 1;
+#X obj 33 30 hsl 51 16 -100 100 0 0 \$0-pan.gui \$0-pan.gui.r pan:-76
+4 8 0 10 -262144 -1 -1 600 1;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 1;

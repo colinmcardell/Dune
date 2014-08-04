@@ -1,17 +1,28 @@
-#N canvas 61 186 1231 463 10;
+#N canvas 163 156 1231 463 10;
 #X obj 1000 398 outlet~;
 #X obj 1096 398 outlet~;
 #X obj 1000 368 catch~ \$0-left;
 #X obj 1096 368 catch~ \$0-right;
-#X obj 9 203 throw~ \$0-left;
-#X obj 9 230 throw~ \$0-right;
-#X obj 9 80 membrane_;
-#X obj 132 203 throw~ \$0-left;
-#X obj 132 230 throw~ \$0-right;
-#X obj 132 80 membrane_;
+#X obj 475 147 throw~ \$0-left;
+#X obj 475 174 throw~ \$0-right;
+#X obj 598 147 throw~ \$0-left;
+#X obj 598 174 throw~ \$0-right;
+#X obj 598 24 membrane_;
+#X obj 475 24 membrane_;
+#X obj 30 37 vsl 16 128 0 127 0 0 \$0-attack.gui \$0-attack.gui.r a
+6 -9 0 10 -262144 -1 -1 0 1;
+#X obj 56 37 vsl 16 128 0 127 0 0 \$0-decay.gui \$0-decay.gui.r d 6
+-9 0 10 -262144 -1 -1 0 1;
+#X obj 82 37 vsl 16 128 0 127 0 0 \$0-sustain.gui \$0-sustain.gui.r
+s 6 -9 0 10 -262144 -1 -1 0 1;
+#X obj 108 37 vsl 16 128 0 127 0 0 \$0-release.gui \$0-release.gui.r
+r 6 -9 0 10 -262144 -1 -1 0 1;
+#X obj 30 178 bng 94 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X connect 2 0 0 0;
 #X connect 3 0 1 0;
-#X connect 6 0 4 0;
-#X connect 6 1 5 0;
-#X connect 9 0 7 0;
-#X connect 9 1 8 0;
+#X connect 8 0 6 0;
+#X connect 8 1 7 0;
+#X connect 9 0 4 0;
+#X connect 9 1 5 0;
+#X coords 0 -1 1 1 114 262 2 20 20;
