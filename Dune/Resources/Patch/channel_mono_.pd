@@ -139,12 +139,12 @@
 #X connect 33 0 0 0;
 #X connect 34 0 33 0;
 #X restore 554 96 pd gui;
-#X obj 96 30 tgl 16 0 \$0-mute.gui \$0-mute.gui.r M 5 8 0 10 -258699
--258699 -261689 1 1;
+#X obj 96 30 tgl 16 0 \$0-mute.gui \$0-mute.gui.r M 5 8 0 10 -262144
+-262144 -258699 0 1;
 #X obj 33 56 hsl 77 16 0 117 0 0 \$0-volume.gui \$0-volume.gui.r volume
-7 8 0 10 -262144 -1 -1 3656 1;
-#X obj 33 30 hsl 51 16 -100 100 0 0 \$0-pan.gui \$0-pan.gui.r pan:-76
-4 8 0 10 -262144 -1 -1 600 1;
+7 8 0 10 -262144 -1 -1 2533 1;
+#X obj 33 30 hsl 51 16 100 -100 0 0 \$0-pan.gui \$0-pan.gui.r pan:100
+4 8 0 10 -262144 -1 -1 5000 1;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 1;

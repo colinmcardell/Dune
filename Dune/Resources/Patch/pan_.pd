@@ -7,7 +7,7 @@
 #X obj 190 83 *~ 0.25;
 #X obj 144 162 cos~;
 #X obj 123 193 *~;
-#X obj 187 116 -~ 0.25;
+#X obj 193 114 -~ 0.25;
 #X obj 33 232 outlet~;
 #X obj 123 232 outlet~;
 #X connect 0 0 3 0;
@@ -16,8 +16,8 @@
 #X connect 2 0 3 1;
 #X connect 3 0 9 0;
 #X connect 4 0 5 0;
-#X connect 5 0 2 0;
 #X connect 5 0 8 0;
+#X connect 5 0 2 0;
 #X connect 6 0 7 1;
 #X connect 7 0 10 0;
 #X connect 8 0 6 0;

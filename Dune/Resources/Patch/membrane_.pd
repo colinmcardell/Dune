@@ -55,9 +55,9 @@
 #X connect 14 0 8 0;
 #X restore 650 141 pd gui;
 #X obj 63 60 hsl 77 16 150 7500 0 0 \$0-pair-freq.gui \$0-pair-freq.gui.r
-frequency 7 8 0 10 -262144 -1 -1 3300 1;
+frequency 7 8 0 10 -262144 -1 -1 1600 1;
 #X obj 63 86 hsl 77 16 0 25 0 0 \$0-pair-drift.gui \$0-pair-drift.gui.r
-drift 7 8 0 10 -262144 -1 -1 500 1;
+drift 7 8 0 10 -262144 -1 -1 608 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 1 3 0;
