@@ -1,12 +1,12 @@
 PODS:
-  - CocoaLumberjack (1.9.0):
-    - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (1.9.0)
-  - CocoaLumberjack/Extensions (1.9.0):
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
   - libpd (0.7.0)
-  - Masonry (0.5.2)
-  - UIImage+Additions (1.1.0)
+  - Masonry (0.5.3)
+  - UIImage+Additions (1.2.0)
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 1.8)
@@ -15,9 +15,9 @@ DEPENDENCIES:
   - UIImage+Additions (~> 1.0)
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
   libpd: f9e63d090e284438826f9b2fdc0810dbb9889e6f
-  Masonry: ec0189e1a07af00913e4a1a335ea76887adc86e1
-  UIImage+Additions: 66ee88773215955a2703ea31b790fdf3438303d9
+  Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
+  UIImage+Additions: c9088e24e095113a81b4ab31271d5b656850317c
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0
